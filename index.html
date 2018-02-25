@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Démineur</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" charset="utf-8"></script>
+  <link rel="icon" href="img/demineur.png">
+</head>
+<body>
+  <header>
+    <div id="titre">
+      <h1 class="title">DEMINEUR</h1>
+    </div>
+    <div id="logo">
+      <img src="img/newlogo.png" id="imgLogo" width="80px" height="80px" alt="mine">
+    </div>
+  </header>
+  <div id="menu">
+    <p class="description">Déplacez un scrollbar pour commencer une nouvelle partie</p>
+    <table id="tabMenu">
+      <tr>
+        <td><p>Nombre de lignes</p></td>
+        <td> <input type="range" class="range" id="nb_lignes" min="10" max="50" step="1" value="10"></td><td><p id ="nLigne">10</p></td>
+      </tr>
+      <tr>
+        <td><p>Nombre de colonnes</p></td>
+        <td> <input type="range" class="range" id="nb_colonnes" min="10" max="50" step="1" value="10"></td><td><p id ="nColonne">10</p></td>
+      </tr>
+      <tr>
+        <td>Difficulté</td>
+        <td> <input type="range" class="range" id="nb_level" min="1" max="10" step="1" value="5"></td><td><p id ="nLevel"><img src="img/stars5.png" width="250px" height="25px" alt="5"></p></td>
+      </tr>
+    </table>
+  </div>
+  <p id="nombreMines"><img src="img/mine.png" alt="mines"> = Déplacer un scrollbar pour commencer une nouvelle partie </p>
+  <div id="chronometre">
+    <p id="chrono">00:00:00</p>
+  </div>
+  <table id="game">
+  </table>
+</body>
+</html>

@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Arcade";
+  src: url("../fonts/ARCADE_N.ttf");
+}
+body{
+  font-family: "arial";
+    background: url(../img/minesweeper.jpg) 0 0;
+}
+header{
+  margin: 0 auto;
+  width: 80%;
+  height: 80px;
+  background: black;
+  color: white;
+  display: flex;
+}
+
+#titre{
+  width: 80%;
+  text-align: center;
+  line-height: 80px;
+}
+#logo{
+  width: 10%;
+}
+
+#logo #imgLogo{
+  padding-left: 50%;
+}
+
+.stars{
+width: 300px;
+height: 30px;
+}
+
+#nombreMines{
+  text-align: center;
+  background: black;
+  color: white;
+  width: 80%;
+  margin: auto;
+}
+#chronometre{
+  text-align: center;
+  width: 80%;
+  background: blue;
+  height: 30px;
+  margin: auto;
+}
+
+#chronometre #chrono{
+  width: 20%;
+  height: 30px;
+  line-height: 30px;
+  margin: auto;
+  background: black;
+  color: white;
+}
+#menu{
+  margin: 0 auto;
+  width: 80%;
+  background: black;
+  color: white;
+  padding-top: 20px;
+}
+
+#menu .description{
+  margin-left: 20px;
+}
+
+#menu #tabMenu{
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 90%;
+}
+#game{
+margin: 0 auto;
+background: black;
+color: white;
+font-family: "Arcade";
+border: 10px solid blue;
+}
+
+#game tr td{
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+#game tr td.hidden.noflag{
+  background: dimgray;
+  cursor: pointer;
+}
+
+#game tr td.hidden{
+  background-color: dimgray;
+  background-image: url(../img/flag.png);
+  cursor: pointer;
+}
+
+#game tr td.show{
+  background-color: silver;
+}
+
+#game tr td.show.mine{
+  background-color: red;
+  background-image: url(../img/mine.png);
+}
+
+#game tr td.mauvaisDrapeau{
+  background-image: url(../img/flagbarre.png);
+}
+
+#game tr td.show.finDuGame{
+  background-color: silver;
+  background-image: url(../img/mine.png);
+}
